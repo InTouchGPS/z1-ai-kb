@@ -27,6 +27,13 @@ AGENTS.md §5 lists this collection as the last missing piece. The build kit (`_
 - [x] T7 Synced with `bash _kit/rn/sync_root.sh`. Route: delegated writer. Evidence: all local links and videos in the 10 new root pages and index.html resolve; no placeholders left; index screenshot shows the 2×2 grid with the 4th card; regenerated math hubs are byte-identical to the root copies; `codigo-*` holds .py only. Task: extend `local.py` for the R prefix, generate local copies, create the collection index and the `index.html` card. Card position: last (4th), as decided by Carlos on 2026-11-07.
 - [x] T8 Committed: 3bffd9f (R1+R2 content), plus the index and hub commit (this doc amended into it). Native review assess: medium risk (slice_budget_reached). Skipped by Carlos on 2026-11-07, because the untracked .atl/ blocked the preflight.
 
+### Pair 2: R3 + R4
+- [x] T9 R3 Spanish (`red-multicapa`). Route: delegated writer. Evidence: parent rebuild gave errors [] and phone 400; video 68.7 s with AAC audio; trip 5 numbers re-derived by hand.
+- [x] T10 R4 Spanish (`salida-y-perdida`). Route: delegated writer. Evidence: parent rebuild gave errors [] and phone 400; video 67.2 s with AAC audio; softmax, CE, total loss and threshold re-derived by hand.
+- [x] T11 Review done. Fixes passed to translators: R3 XOR phone panel stretched; R4 video axis offset at 25 s and toy z labels tight on phone.
+- [x] T12 Translated R3/R4 (`the-multilayer-network`, `output-and-loss`). Evidence: EN builds gave errors [] and phone 400; videos 68.7 s and 67.2 s. Fixes in both languages: R3 XOR equal axes; R4 video axis floor (ES re-rendered) and toy z labels.
+- [x] T13 Ran sync_root.sh. Hubs show 4 of 13 ready; counters are 4/8/4; no broken local links or placeholders; new pages at 400 px dark have scrollWidth 400 and no JS errors.
+
 ## Acceptance
 - build.sh reports errors [] and phone scrollWidth 400, with no width lines, for every page.
 - Every code output comes from a real run, and the from-scratch module is verified against a reference.
@@ -34,8 +41,10 @@ AGENTS.md §5 lists this collection as the last missing piece. The build kit (`_
 - Numbers agree across the simple page, the technical page, the worked example and the video.
 
 ## Progress
+- 2026-11-12: R3+R4 complete in ES/EN and synced.
+- 2026-11-12: main and the branch pushed by Carlos. Review mode is off for this clone. Started pair 2 (R3+R4).
 - 2026-11-07: R1+R2 complete in ES/EN, synced to root. The R1 ES video heading was fixed to «Todo en un minuto» (1:10).
 - 2026-11-07: Created branch `feat/neural-networks`. T1 and T2 done.
 
 ## Next step
-Carlos pushes and merges `feat/neural-networks`. Next pair: R3 (multilayer network) + R4 (output and loss).
+Carlos pushes and merges. Next pair: R5 (backpropagation) + R6 (training well).

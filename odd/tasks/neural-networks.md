@@ -34,6 +34,13 @@ AGENTS.md §5 lists this collection as the last missing piece. The build kit (`_
 - [x] T12 Translated R3/R4 (`the-multilayer-network`, `output-and-loss`). Evidence: EN builds gave errors [] and phone 400; videos 68.7 s and 67.2 s. Fixes in both languages: R3 XOR equal axes; R4 video axis floor (ES re-rendered) and toy z labels.
 - [x] T13 Ran sync_root.sh. Hubs show 4 of 13 ready; counters are 4/8/4; no broken local links or placeholders; new pages at 400 px dark have scrollWidth 400 and no JS errors.
 
+### Pair 3: R5 + R6
+- [x] T14 R5 Spanish (`backpropagation`). Route: delegated writer. Evidence: parent rebuild gave errors [] and phone 400; video 68.7 s with AAC audio; trip 3 forward and backward pass re-derived by hand.
+- [x] T15 R6 Spanish (`entrenar-bien`). Route: delegated writer. Evidence: parent rebuild gave errors [] and phone 400; video 67.7 s with AAC audio; 3 Adam steps re-derived by hand.
+- [x] T16 Review done. R6 network uses tanh instead of topic 3's sigmoid; explicit note added in both languages by the R6 translator.
+- [x] T17 Translated R5/R6. Evidence: EN builds gave errors [] and phone 400. Parent fixes: R5 ES video «1 errores» changed to singular/plural and re-rendered (marks unchanged, 68.7 s); R6 toy pc() now rounds the fraction first, so 91.25 % shows as 91.2 % like the Python outputs (ES+EN). The R6 tanh note was added in both languages.
+- [x] T18 Synced. Hubs 6 of 13; counters 6/12/6; no broken links or placeholders; new pages at 400 px dark have scrollWidth 400 and no JS errors.
+
 ## Acceptance
 - build.sh reports errors [] and phone scrollWidth 400, with no width lines, for every page.
 - Every code output comes from a real run, and the from-scratch module is verified against a reference.
@@ -41,10 +48,11 @@ AGENTS.md §5 lists this collection as the last missing piece. The build kit (`_
 - Numbers agree across the simple page, the technical page, the worked example and the video.
 
 ## Progress
+- 2026-11-12: R5+R6 complete in ES/EN and synced.
 - 2026-11-12: R3+R4 complete in ES/EN and synced.
 - 2026-11-12: main and the branch pushed by Carlos. Review mode is off for this clone. Started pair 2 (R3+R4).
 - 2026-11-07: R1+R2 complete in ES/EN, synced to root. The R1 ES video heading was fixed to «Todo en un minuto» (1:10).
 - 2026-11-07: Created branch `feat/neural-networks`. T1 and T2 done.
 
 ## Next step
-Carlos pushes and merges. Next pair: R5 (backpropagation) + R6 (training well).
+Carlos pushes and merges. Next pair: R7 (overfitting and regularization) + R8 (CNN).
